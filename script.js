@@ -162,7 +162,7 @@ $(document).ready(function () {
                 let random = Math.floor(Math.random() * results.length)
                 adv = results[random].word
                 console.log("adverb: " + adv)
-
+                
             }
 
         })
@@ -190,7 +190,11 @@ $(document).ready(function () {
     function storyFinal() {
         if (speaking == null || undefined){
             activateModal()}
-
+        else if (!adj1){
+            activateModal()}
+        else if (!adv) {
+            activateModal()
+        }
         else {
         let p = $("<p style='font-style:italic;'>").text("In " + adj1 + " " + setting + ", " + main + " " + verb + "s. "
             + main + " " + "is " + adv + " " + speaking + " to " + side + "."
