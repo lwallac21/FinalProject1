@@ -1,0 +1,15 @@
+.container{
+    align-items: center;
+};
+
+.quoteFont {
+    font: "Lucida Console", Courier, monospace
+};
+
+.final{
+    font-size: larger;
+}
+
+p{
+    font-family: 'Courier Prime', monospace;
+};
